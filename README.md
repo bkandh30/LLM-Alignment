@@ -73,6 +73,25 @@ The study hypothesized that simplification could result in changes to reasoning 
 
 ![](images/mmluRoscoe.png)
 
+### Quantitative Results: GSM8K Accuracy by Type
+
+![](images/gsm8kTable1.png)
+
+- Single-Step Questions: Minor improvement (+3.5%) post-alignment suggests examples helped in simpler tasks.
+- Multi-Step Questions: Accuracy declined significantly (-5.3%), likely due to oversimplified responses and missing reasoning steps.
+- Overall Accuracy: A slight overall drop (-3.2%) indicates alignment trade-offs, especially for complex reasoning.
+
+![](images/gsm8kaccuracy.png)
+
+### Qualitative Results: GSM8K Reasoning Quality (ROSCOE Scores)
+
+![](images/gsm8kTable2.png)
+
+- Logical Coherence: Improved slightly, suggesting better flow in reasoning steps.
+- Relevance and Completeness: Both dropped, with responses omitting critical intermediate steps or including irrelevant details.
+
+![](images/gsm8kROSCOE.png)
+
 ## Real-World Application
 
 - Designing Adaptive LLMs: Develop models that can switch between clarity-focused and reasoning-intensive modes based on task-requirements.
