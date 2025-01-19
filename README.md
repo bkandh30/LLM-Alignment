@@ -4,22 +4,27 @@
 
 Simplified alignment techniques aim to enhance the reasoning performance of Large Language Models (LLMs) in long-form question answering. However, this simplification may come at the cost of reasoning depth and accuracy in complex tasks.
 
-Our study aims to evaluate how simplified alignment affects the reasoning benchmarks like MMLU and GSM8K, examining the trade-offs between clarity and reasoning performance.
+The study aims to evaluate how simplified alignment affects the reasoning benchmarks like MMLU and GSM8K, examining the trade-offs between clarity and reasoning performance.
 
-We hypothesize that simplification could result in changes to reasoning quality, offering both potential benefits and drawbacks.
+The study hypothesized that simplification could result in changes to reasoning quality, offering both potential benefits and drawbacks.
 
 ## Datasets
 
 ### Alignment Datasets
 
-- ELI5 Dataset
+- ELI5 Dataset: It contains simplified explanations designed for clarity and accessibility. It also features long-form open-ended questions requiring comprehensive, multi-sentence answers.
 
 ### Evaluation Dataset
 
-- MMLU (Massive Multitask Language Understanding)
-- GSM8K (Grade School Math 8K)
+- MMLU (Massive Multitask Language Understanding): This dataset tests broad knowledge and reasoning across 57 subjects.
+- GSM8K (Grade School Math 8K): This dataset focuses on multi-step logical reasoning through mathematical word problems.
 
-## Proposed Solution
+## Methodology
+
+- Researched and standardized datasets.
+- For Question and Answer Processing, I used tokenization, text normalization and noise removal. For supporting document processing, I used sentence splitting and selection, heuristic passage extraction, concatenation and restructuring.
+- Direct Preference Optimization (DPO) was utilized to fine-tune LLMs.
+- The models were trained to prioritize clarity and simplicity in responses, aligning with ELI5-style outputs.
 
 ## Performance Evaluation
 
